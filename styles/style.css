@@ -374,6 +374,16 @@
   background-color: rgb(0 0 0 / 0.75);
 }
 
+@supports (
+  (text-stroke: 1px var(--background-color)) or
+    (-webkit-text-stroke: 1px var(--background-color))
+) {
+  .card__image__label {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--background-color);
+  }
+}
+
 @media (width <= 375px) {
   .header {
     padding: 120px 14px;
