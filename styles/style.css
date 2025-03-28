@@ -141,6 +141,7 @@
   justify-content: center;
   height: 38px;
   background-color: var(--background-color);
+  margin-right: 2px;
 }
 
 .card__icon-button:focus-visible {
@@ -397,27 +398,20 @@
   .card-title {
     padding-inline: 10px;
     line-height: 120%;
-  }
-
-  .image {
-    margin-bottom: 6px;
+    padding-bottom: 3px;
   }
 
   .label {
     inset-inline-end: 10px;
-    inset-block-start: 29px;
+  }
+
+  .card-text:first-child {
+    margin-top: 6px;
   }
 
   .card-text {
-    padding-inline: 0px;
-    margin-top: 10px;
     margin-right: 5px;
-    line-height: 117%;
     margin-left: 5px;
-  }
-
-  .card-footer {
-    padding: 25px;
   }
 
   .save-button {
